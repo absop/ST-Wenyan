@@ -1,0 +1,128 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: Wenyan
+file_extensions:
+  - wy
+  - wenyan
+
+scope: source.wenyan
+variables:
+  ident: "[^「」。]+"
+  digits: (?:零|一|二|三|四|五|六|七|八|九|十|百|千|萬|億|兆|京|垓|秭|穣|溝|澗|正|載|極|恆河沙|阿僧祇|那由他|不可思議|無量大數|分|釐|毫|絲|忽|微|纖|沙|塵|埃|渺|漠|模糊|逡巡|須臾|瞬息|彈指|剎那|六德|虛|空|清|淨)+
+
+contexts:
+  main:
+    - include: declaration
+    - include: control
+    - include: operators
+    - include: function-call
+    - include: comments
+    - include: variable
+    - include: constants
+
+    - match: "。"
+      scope: punctuation.separator.wenyan
+
+
+  declaration:
+    - match: 吾有|今有|有
+      scope: keyword.declaration.wenyan
+
+    - match: 數|列|言|術|爻|物
+      scope: storage.type.wenyan
+
+    - match: 名之曰|曰|噫|昔之|今|是矣|不復存矣
+      scope: keyword.declaration.wenyan
+
+
+  control:
+    - match: 恆為是
+      scope: keyword.control.loop.wenyan
+
+    - match: 若非|若|者|夫
+      scope: keyword.control.conditional.wenyan
+
+    - match: 乃得|乃歸空無|是謂|之術也|必先得|是術曰|乃行是術曰|欲行是術|也|云云|凡|中之|恆為是|為是|遍|乃止|其物如是
+      scope: keyword.control.wenyan
+
+    - match: 書之
+      scope: variable.function.wenyan
+
+    - match: 長
+      scope: variable.function.wenyan
+
+
+  operators:
+    - match: 充
+      scope: keyword.operator.assignment.wenyan
+
+    - match: 以
+      scope: keyword.operator.accessor.wenyan
+
+    - match: 之
+      scope: punctuation.accessor.wenyan
+
+    - match: 等於|不等於|不大於|不小於|弗大於|弗小於|大於|小於
+      scope: keyword.operator.comparison.wenyan
+
+    - match: 加|減|乘|除|中有陽乎|中無陰乎|變|所餘幾何|銜|其餘
+      scope: keyword.operator.arithmetic.wenyan
+
+
+  comments:
+    - match: (注曰|疏曰|批曰).*$
+      captures:
+        1: comment.line.begin.wenyan
+      scope: comment.line.wenyan
+
+
+  variable:
+    - match: "(「){{ident}}(」)"
+      captures:
+        1: variable.other.begin.wenyan
+        2: variable.other.end.wenyan
+      scope: variable.other.wenyan entity.name.wenyan
+
+    - match: 其
+      scope: variable.language.wenyan
+
+
+  constants:
+    - match: "{{digits}}"
+      scope: constant.numeric.wenyan
+
+    - match: 陰|陽
+      scope: constant.language.wenyan
+
+    - match: 「「
+      scope: punctuation.definition.string.begin.wenyan
+      push: string-content
+
+    - match: \d+
+      scope: constant.numeric.wenyan
+
+  string-content:
+    - match: 」」
+      scope: punctuation.definition.string.end.wenyan
+      pop: true
+
+    - match: .
+      scope: meta.string.wenyan
+
+
+  function-call:
+    - match: "(施)「({{ident}})」"
+      captures:
+        1: keyword.control.wenyan
+        2: entity.name.function.wenyan
+
+    - match: 於
+      scope: punctuation.accessor.wenyan
+      push: function-parameter
+
+  function-parameter:
+    - match: "{{ident}}|{{digits}}。？"
+      scope: variable.parameter.wenyan
+      pop: true
+

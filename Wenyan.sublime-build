@@ -1,0 +1,24 @@
+{
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.wenyan",
+
+    "linux":    {"shell_cmd": "wenyan-linux --exec true ${file}"},
+    "osx":      {"shell_cmd": "wenyan-macos --exec true ${file}"},
+    "windows":  {"shell_cmd": "wenyan-win   --exec true ${file}"},
+
+    "variants": [
+        {
+            "name": "Compile to Js",
+            "linux":    {"shell_cmd": "wenyan-linux --lang js -o ${file_base_name}.js ${file}"},
+            "osx":      {"shell_cmd": "wenyan-macos --lang js -o ${file_base_name}.js ${file}"},
+            "windows":  {"shell_cmd": "wenyan-win   --lang js -o ${file_base_name}.js ${file}"},
+        },
+        {
+            "name": "Compile to Python",
+            "linux":    {"shell_cmd": "wenyan-linux --lang py -o ${file_base_name}.py ${file}"},
+            "osx":      {"shell_cmd": "wenyan-macos --lang py -o ${file_base_name}.py ${file}"},
+            "windows":  {"shell_cmd": "wenyan-win   --lang py -o ${file_base_name}.py ${file}"},
+        }
+    ]
+}

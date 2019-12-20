@@ -1,0 +1,22 @@
+[
+    // {
+    //     "keys": ["‘"],
+    //     "command": "insert",
+    //     "args": {"characters": "「」"},
+    //     "context": [{
+    //         "key": "selector",
+    //         "operator": "equal",
+    //         "operand": "source.wenyan"
+    //     }]
+    // },
+    // {
+    //     "keys": ["“"],
+    //     "command": "insert",
+    //     "args": {"characters": "「「」」"},
+    //     "context": [{
+    //         "key": "selector",
+    //         "operator": "equal",
+    //         "operand": "source.wenyan"
+    //     }]
+    // }
+]
