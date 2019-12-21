@@ -95,20 +95,19 @@ contexts:
     - match: 陰|陽
       scope: constant.language.wenyan
 
-    - match: 「「
-      scope: punctuation.definition.string.begin.wenyan
-      push: string-content
+    - include: match-string
 
     - match: \d+
       scope: constant.numeric.wenyan
 
-  string-content:
-    - match: 」」
-      scope: punctuation.definition.string.end.wenyan
-      pop: true
-
-    - match: .
-      scope: meta.string.wenyan
+  match-string:
+    - match: 「「
+      scope: punctuation.definition.string.begin.wenyan
+      push:
+        - meta_scope: string.quoted.other.wenyan
+        - match: 」」
+          scope: punctuation.definition.string.end.wenyan
+          pop: true
 
 
   function-call:
