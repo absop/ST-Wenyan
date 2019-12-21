@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[吾有一術。名之曰「${0:吸星大法}」。]]></content>
+    <tabTrigger>function</tabTrigger>
+    <scope>source.wenyan</scope>
+    <description>吾有一術</description>
+</snippet>
