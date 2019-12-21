@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[「「${1:}」」]]></content>
-	<tabTrigger>“</tabTrigger>
+	<tabTrigger>doubolequote</tabTrigger>
 	<scope>source.wenyan</scope>
 	<description>「「」」</description>
 </snippet>
