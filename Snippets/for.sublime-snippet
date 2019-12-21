@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+為是「$1」遍。
+$2
+云云]]></content>
+    <tabTrigger>for</tabTrigger>
+    <scope>source.wenyan</scope>
+    <description>为是「若干」遍</description>
+</snippet>
