@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[吾有一言。曰「「${1:問天地好在}」」。名之曰「${2:乙}」。]]></content>
+	<tabTrigger>string</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>吾有一言</description>
+</snippet>

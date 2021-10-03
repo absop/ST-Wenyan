@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[充「$1」以$2。]]></content>
+	<tabTrigger>push</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>充其量</description>
+</snippet>

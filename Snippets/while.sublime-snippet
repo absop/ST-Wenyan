@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[有數${1:一}。名之曰「$2」。
+恆為是。
+	若「$2」大於${3:八}者。乃止。
+	加「$2」以一。
+云云。]]></content>
+	<tabTrigger>while</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>恆為是</description>
+</snippet>

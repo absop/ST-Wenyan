@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[吾嘗觀「「${1:算经}」」之書。方悟「${2:正弦}}」之義。]]></content>
+    <content><![CDATA[吾嘗觀「「${1:算经}」」之書。方悟「${2:正弦}」之義。]]></content>
     <tabTrigger>import</tabTrigger>
     <scope>source.wenyan</scope>
     <description>吾嘗觀</description>

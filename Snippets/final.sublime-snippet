@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[不之何禍歟。
+	$1]]></content>
+	<tabTrigger>final</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>克禍之三</description>
+</snippet>

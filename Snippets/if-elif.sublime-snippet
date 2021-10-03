@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[若$1者。
+	$2
+或若$3者。
+	$4
+若非。
+	$5
+也。]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>或若也</description>
+</snippet>
