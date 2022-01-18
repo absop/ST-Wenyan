@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[若$1者。
+	$2
+也。]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>若也</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[昔之「${1:甲}」者。今${2:其}是矣。]]></content>
+	<tabTrigger>assignment</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>昔之「甲」者。今其是矣。</description>
+</snippet>

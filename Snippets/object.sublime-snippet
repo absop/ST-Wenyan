@@ -1,5 +1,7 @@
 <snippet>
-    <content><![CDATA[吾有一物。名之曰「$0」。]]></content>
+    <content><![CDATA[吾有一物。名之曰「$1」。其物如是。
+    $2
+是謂「$1」之物也。]]></content>
     <tabTrigger>object</tabTrigger>
     <scope>source.wenyan</scope>
     <description>吾有一物</description>

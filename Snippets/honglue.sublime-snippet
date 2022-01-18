@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[或云「「$1」」。
+蓋謂「「$2」」。
+]]></content>
+	<tabTrigger>honglue</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>宏圖大略也</description>
+</snippet>

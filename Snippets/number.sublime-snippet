@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[吾有一數。曰${1:一}。名之曰「${2:甲}」。]]></content>
+	<tabTrigger>number</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>吾有一數</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[嗚呼。「「$1」」之禍。曰「「$2」」。也]]></content>
+	<tabTrigger>error</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>生禍</description>
+</snippet>

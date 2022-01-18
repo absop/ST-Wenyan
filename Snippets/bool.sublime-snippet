@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[吾有一爻。曰${1:陽}。名之曰「${2:丙}」。]]></content>
+	<tabTrigger>bool</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>吾有一爻</description>
+</snippet>

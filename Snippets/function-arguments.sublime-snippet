@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[吾有一術。名之曰「${1:吸星大法}」。欲行是術。必先得一$2。曰「$3」。乃行是術曰。
+    $4
+是謂「${1:吸星大法}」之術也。]]></content>
+    <tabTrigger>function</tabTrigger>
+    <scope>source.wenyan</scope>
+    <description>今有一術</description>
+</snippet>

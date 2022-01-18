@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[豈「「$1」」之禍歟。
+	$2]]></content>
+	<tabTrigger>catch</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>避禍之二</description>
+</snippet>

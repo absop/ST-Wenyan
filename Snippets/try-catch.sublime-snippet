@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[姑妄行此。
+	$1
+如事不諧。豈「「$2」」之禍歟。
+	$3
+乃做罷。]]></content>
+	<tabTrigger>try</tabTrigger>
+	<scope>source.wenyan</scope>
+	<description>禍否</description>
+</snippet>
